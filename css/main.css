@@ -1,0 +1,106 @@
+#tableCars {
+    width: 1000px;
+    text-align: center;
+    user-select: none;
+    border-collapse: collapse;
+    border: solid 5px slategrey;
+    margin: 0 auto;
+}
+
+#tableCars thead th{
+    background-color: #E6E6FA;
+}
+
+#tableCars thead th,
+#tableCars tbody td{
+    border: solid 1px #000000;
+    padding: 15px;
+}
+
+#tableCars thead th:last-child,
+#tableCars tbody td:last-child{
+    max-width: 400px;
+    text-align: center;
+}
+
+.container-receipt header{
+    padding: 10px;
+    
+}
+
+.container-receipt h1{
+    border-bottom: solid 1.5px #000000(63, 63, 63, 0.849) ;
+}
+
+.button{
+    border-style: none;
+    padding: 0 20px;
+    min-height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 20px;
+}
+
+.button.blue {
+    background-color: #4169E1;
+    border: solid 1px 	#4682B4;
+}
+
+.button.blue:hover{
+    background-color: #fff;
+    border: solid 1px #1fb6ff;
+    color: #1fb6ff;
+}
+
+.button.red {
+    background-color: #FF0000;
+    border: solid 1px #FF0000;
+
+}
+
+.button.red:hover{
+    background-color: #fff;
+    border: solid 1px #ff4949;
+    color: #ff4949;
+}
+
+.button.green {
+    background-color: #20B2AA;
+    border: solid 1px #13CE66;
+}
+
+.button.green:hover{
+    background-color: #fff;
+    border: solid 1px #13CE66;
+    color: #13CE66;
+}
+.button.yellow {
+    background-color: #FFD700;
+    border: solid 1px #FFD700;
+}
+
+.button.yellow:hover{
+    background-color: #fff;
+    border: solid 1px #d7db03;
+    color: #d7db03;
+}
+.container-receipt{
+    width: calc(40px + 40vw);
+    display: flex;
+    flex-direction: column;
+    border: solid 2px  #B0E0E6;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+#containerSlogan{
+    width: 100%;
+    height: 500px;
+     background-image: url(../img/estacionamento.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     padding-top: 200px;
+ }
