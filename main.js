@@ -197,7 +197,18 @@ const calcExit = (index) => {
 
 const deleteCar = (index) => {
     const dbFastParking = readDBFastParking()
-    const resp = confirm(`Ao confirmar os dado de ${dbFastParking[index].nome} serão apagados ou editados?`);
+    const resp = confirm(`Ao confirmar os dado de ${dbFastParking[index].nome} serão apagados`);
+
+    if (resp) {
+        dbFastParking.splice(index, 1)
+        setDBFastParking(dbFastParking);
+        updateTable();
+    }
+}
+
+const editarCarro = (index) => {
+    const dbFastParking = readDBFastParking()
+    const resp = confirm(`Ao confirmar os dado de ${dbFastParking[index].nome} serão editados`);
 
     if (resp) {
         dbFastParking.splice(index, 1)
@@ -235,7 +246,7 @@ const editCar = (index) => {
     document.querySelector('#placa-edited').value = dbFastParking[index].placa;
     document.querySelector('#data').value = dbFastParking[index].data;
     document.querySelector('#hora').value = dbFastParking[index].hora;
-    deleteCar(index);
+    editarCarro(index);
 }
 
 const getButtons = (event) => {
